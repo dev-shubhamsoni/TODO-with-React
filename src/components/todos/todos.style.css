@@ -1,0 +1,9 @@
+.completed {
+    text-decoration: line-through;
+    background-color: #f0ead2;
+  }
+  
+  .completed-text {
+    color: #888; /* Color for completed text */
+    
+  }

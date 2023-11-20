@@ -1,11 +1,11 @@
 import { Button } from "../ui/button";
 
-const BottomComponent = () => {
+const BottomComponent = ({pendingTask, deleteAllTodo, allTodos}) => {
     return (
         <>
 
-            <span className=" text-xl">You have 4 pending tasks</span>
-            <Button variant="destructive">Clear All</Button>
+            <span className=" text-xl">You have {pendingTask} pending tasks</span>
+            <Button disabled = {allTodos === 0} onClick = {deleteAllTodo} variant="destructive">Clear All</Button>
         </>
         
 
